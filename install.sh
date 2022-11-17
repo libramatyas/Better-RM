@@ -7,7 +7,9 @@ DIR=/tmp/brm
 if [ -d "$DIR" ];
 then
     #When is
-    echo "0"
+    echo "$DIR/ already exists! not creating another one! make sure you are reinstaliing, press CTRL + C to abort!"
+    echo "Waiting 5 seconds..."
+    sleep 5
 else
     #When dir is missing
     mkdir /tmp/brm/
