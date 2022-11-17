@@ -14,8 +14,10 @@ if [ -d "$DIR" ];
 then
     mkdir /tmp/brm/"$TARG"
     mv $1 /tmp/brm/"$TARG"
+    echo "Removed the files into a folder called $TARG at $DIR"
 else
 	mkdir /tmp/brm/
     mkdir /tmp/brm/"$TARG"
     mv $1 /tmp/brm/"$TARG"
+    echo "Removed the files into a folder called $TARG at $DIR"
 fi
