@@ -13,11 +13,17 @@ DIR=/tmp/brm
 if [ -d "$DIR" ];
 then
     mkdir /tmp/brm/"$TARG"
-    mv $1 /tmp/brm/"$TARG"
+    while (( "$#" )); do 
+        mv $1 /tmp/brm/"$TARG"
+        shift 
+    done
     echo "Removed the files into a folder called $TARG at $DIR"
 else
 	mkdir /tmp/brm/
     mkdir /tmp/brm/"$TARG"
-    mv $1 /tmp/brm/"$TARG"
+    while (( "$#" )); do 
+        mv $1 /tmp/brm/"$TARG"
+        shift 
+    done
     echo "Removed the files into a folder called $TARG at $DIR"
 fi
