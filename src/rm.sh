@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [$1 = ""];
-then   
+then
     echo "You have to put file or a folder as a first argument for this to work!"
     exit
 else
@@ -13,15 +13,15 @@ DIR=/tmp/brm
 if [ -d "$DIR" ];
 then
     mkdir /tmp/brm/"$TARG"
-    while (( "$#" )); do 
+    while (( "$#" )); do
         mv $1 /tmp/brm/"$TARG"
-        shift 
+        shift
     done
     echo "Removed the files into a folder called $TARG at $DIR"
 else
 	mkdir /tmp/brm/
     mkdir /tmp/brm/"$TARG"
-    while (( "$#" )); do 
+    while (( "$#" )); do
         mv $1 /tmp/brm/"$TARG"
         shift 
     done
