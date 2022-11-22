@@ -20,7 +20,7 @@ echo "1"
 echo ""
 echo "Installing Scripts..."
 echo ""
-sudo cp src/rm.sh /usr/bin/brm -f
+sudo cp src/rm.sh /usr/bin/br -f
 echo "done installing rm"
 sudo cp src/cleartrash.sh /usr/bin/ct -f
 echo "done installing cleaner script"
