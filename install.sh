@@ -1,7 +1,6 @@
 #!/bin/bash
 echo "Starting Installation!"
 
-
 ## Create a trash for BRM
 DIR=/tmp/brm
 if [ -d "$DIR" ];
